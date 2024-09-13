@@ -1,0 +1,98 @@
+main{
+  width: 40.6rem;
+  height: 70rem;
+  margin: 9.1rem auto 0;
+  display: grid;
+  grid-template-rows: 2rem auto;
+  grid-template-areas: "header" "main";
+}
+
+.tasks{
+  margin-top: 3.4rem;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding-right: 10px;
+}
+.tasks::-webkit-scrollbar{
+  width: 10px;
+}
+.tasks::-webkit-scrollbar-thumb{
+  width: 10px;
+  border-radius: 10px;
+  background: var(--gray-500);
+}
+
+@media(min-width: 340px){
+  main{
+    width: 32rem;
+    height: 62rem;
+  }
+}
+
+@media(min-width: 360px){
+  main{
+    width: 34rem;
+    height: 48rem;
+  }
+}
+
+@media(min-width: 375px){
+  main{
+    width: 36rem;
+    height: 60rem;
+  }
+}
+
+@media(min-width: 540px){
+  main{
+    height: 44rem;
+  }
+}
+
+@media(min-width: 768px){
+  main{
+    width: 64rem;
+    height: 76rem;
+  }
+}
+
+@media(min-width: 820px){
+  main{
+    width: 78rem;
+    height: 80rem;
+  }
+}
+
+@media(min-width: 1024px){
+  main{
+    width: 90rem;
+    height: 108rem;
+  }
+}
+
+@media(min-width: 1110px){
+  main{
+    height: 44rem;
+  }
+}
+
+@media(min-width: 1280px) {
+  main{
+    width: 73.6rem;
+    height: 38rem;
+  }
+  
+  .tasks{
+    margin-top: 2.4rem;
+  }
+}
+
+@media(max-height: 670px){
+  main{
+    height: 38rem;
+  }
+}

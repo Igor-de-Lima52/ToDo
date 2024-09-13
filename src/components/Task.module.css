@@ -1,0 +1,104 @@
+.circle{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: transparent;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border .2s, background .2s;
+  cursor: pointer;
+}
+.circle img{
+  width: 2rem;
+}
+.noBorder{
+  border: 0;
+}
+.noBorder:hover{
+  border: 0;
+}
+.border{
+  border: 2px solid var(--blue);
+}
+.border:hover{
+  border: 2px solid var(--blue-dark);
+  background: var(--blue-dark-10);
+}
+.delete{
+  line-height: 0;
+  background: transparent;
+  border: 0;
+  padding: 5px;
+  border-radius: 4px;
+  transition: color .2s, background-color .2s;
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+.delete:focus{
+  box-shadow: 0 0 0 2px var(--danger);
+}
+.delete:hover{
+  color: var(--danger);
+  background: var(--gray-400);
+}
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+  gap: 1.2rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+.task p{
+  max-width: 60rem;
+  color: var(--gray-100);
+  line-height: 140%;
+  font-size: 1.4rem;
+  word-break: break-all;
+}
+p.line{
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+@media(min-width: 768px){
+  .circle{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .circle img{
+    width: 2.4rem;
+  }
+  .delete{
+    font-size: 2.8rem;
+  }
+  .task p{
+    font-size: 2rem;
+  }
+}
+
+@media(min-width: 1024px){
+  .delete{
+    font-size: 2.4rem;
+  }
+  .task p{
+    font-size: 2rem;
+  }
+}
+
+@media(min-width: 1280px){
+  .circle{
+    width: 2rem;
+    height: 2rem;
+  }
+  .circle img{
+    width: 2rem;
+  }
+  .task p{
+    font-size: 1.4rem;
+  }
+}

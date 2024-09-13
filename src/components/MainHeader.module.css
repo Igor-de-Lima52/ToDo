@@ -1,0 +1,51 @@
+header{
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count button{
+  display: flex;
+  gap: 8px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.count button:focus{
+  box-shadow: 0 0 0 2px var(--blue-dark);
+}
+
+.count span{
+  font-weight: bold;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 0 8px;
+  border-radius: 10px;
+}
+
+.created{
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.completed{
+  color: var(--purple);
+  font-weight: bold;
+}
+
+
+@media(min-width: 360px){
+  .count button{
+    gap: 4px;
+    font-size: 1.4rem;
+  }
+}
+
+@media(min-width: 768px){
+  .count button{
+    gap: 8px;
+  }
+}
