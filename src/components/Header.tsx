@@ -28,17 +28,17 @@ export function Header({ tasks, setTasks }: HeaderProps){
 
   return(
     <header className={styles.header}>
-      <img src={logo} alt="Logo do ToDo" />
+      <img src={logo} alt="ToDo logo" />
 
         <form onSubmit={handleCreateTask}>
           <input 
             type="text" 
-            placeholder="Adicione uma nova tarefa"
+            placeholder="Add a new task"
             value={newTaskText}
             onChange={handleTypeTask}
           />
           <button type="submit" disabled={isNewTaskEmpty}>
-            Criar
+            Create
             <PlusCircle size={16} />
           </button>
         </form>

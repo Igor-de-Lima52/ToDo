@@ -41,12 +41,12 @@ form input::placeholder{
 
 form button{
   width: 9rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: .8rem;
-  padding: 1.6rem 0;
+  padding: 1.6rem 1rem;
   border-radius: 8px;
   color: var(--gray-100);
   background: var(--blue-dark);
