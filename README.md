@@ -69,3 +69,5 @@ The project is ready to deploy in a production environment. To generate the prod
 ```bash
 npm run build
 ```
+
+<a href="https://tasksorganization.netlify.app/" target="_blank">You can see the project here</a>
